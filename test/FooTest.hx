@@ -3,9 +3,11 @@ package ;
 import massive.munit.util.Timer;
 import massive.munit.Assert;
 import massive.munit.async.AsyncFactory;
-import haxe.*;
 import mockatoo.*;
+import org.hamcrest.core.*;
+import org.hamcrest.*;
 using mockatoo.Mockatoo;
+using org.hamcrest.MatcherAssert;
 
 class FooTest
 {
@@ -37,11 +39,19 @@ class FooTest
 	}
 	
 	@Test
-	public function testEquals():Void
+	public function testFoo():Void
 	{
 		var bar = Bar.mock();
 		var foo = new Foo(bar);
 		foo.bar_set_str("bar");
 		bar.set_str("bar").verify();
+	}
+	
+	@Test
+	public function testBar():Void 
+	{
+		var bar = new ConcreteBar();
+		bar.set_str("bar");
+		bar.get_str().assertThat(IsEqual.equalTo("bar"));
 	}
 }
