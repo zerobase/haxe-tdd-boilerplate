@@ -19,3 +19,4 @@ Run `haxelib run munit test -neko` to test the app.
 ## Build ##
 
 Run `haxe compile.hxml` to build the app.
+If build failed, create `build` directory then retry.
