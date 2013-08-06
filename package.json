@@ -1,0 +1,25 @@
+{
+  "name": "haxe-tdd-boilerplate",
+  "version": "0.0.0",
+  "description": "Haxe TDD Boilerplate",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-haxe": "~0.1.10",
+    "grunt-exec": "~0.4.2"
+  },
+  "scripts": {
+    "test": "haxelib run munit test -neko"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:zerobase/haxe-tdd-boilerplate.git"
+  },
+  "author": "Ishibashi Hideto <me@ishibashihideto.net>",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
