@@ -1,7 +1,6 @@
 -cp src
 -main Main
 -js build/main.js
---dead-code-elimination
 -debug
 -lib munit
 -lib hamcrest
