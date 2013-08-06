@@ -3,3 +3,4 @@
 -js build/main.js
 --dead-code-elimination
 -debug
+-lib munit
