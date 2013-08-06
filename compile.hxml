@@ -4,3 +4,5 @@
 --dead-code-elimination
 -debug
 -lib munit
+-lib hamcrest
+-lib mockatoo
