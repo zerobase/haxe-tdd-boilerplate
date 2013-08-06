@@ -3,7 +3,6 @@ Haxe TDD Boilerplate
 
 ## Directory ##
 
-- .idea: an IntelliJ IDEA project setting file
 - build: a build target directory
 - report: a test report directory
 - src: a Haxe source(.hx) directory
