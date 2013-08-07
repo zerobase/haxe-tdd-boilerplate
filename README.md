@@ -4,9 +4,9 @@ Haxe TDD Boilerplate
 ## Requirements ##
 
 - Haxe 3.0
-- `npm install`
-- `haxelib install munit`
-- `haxelib install mockatoo`
+- Run `npm install` to install node modules.
+- Run `haxelib install munit` to install munit.
+- Run `haxelib install mockatoo` to install mockatoo.
 
 ## Directories and Files ##
 
