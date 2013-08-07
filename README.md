@@ -3,10 +3,14 @@ Haxe TDD Boilerplate
 
 ## Requirements ##
 
-- Haxe 3.0
+- [Haxe](http://haxe.org/) 3.0
 - Run `npm install` to install node modules.
-- Run `haxelib install munit` to install munit.
-- Run `haxelib install mockatoo` to install mockatoo.
+	- [grunt](http://gruntjs.com/)
+	- [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
+	- [grunt-haxe](https://github.com/Fintan/grunt-haxe)
+	- [grunt-exec](https://github.com/jharding/grunt-exec)
+- Run `haxelib install munit` to install [munit](http://lib.haxe.org/p/munit).
+- Run `haxelib install mockatoo` to install [mockatoo](http://lib.haxe.org/p/mockatoo).
 
 ## Directories and Files ##
 
