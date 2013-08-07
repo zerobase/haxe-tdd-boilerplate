@@ -23,6 +23,8 @@ Haxe TDD Boilerplate
 
 Run `haxelib run munit test -neko` to test the app.
 
+Run `grunt watch` to test continuously on every source code changes.
+
 ## Build ##
 
 Run `haxe compile.hxml` to build the app.
