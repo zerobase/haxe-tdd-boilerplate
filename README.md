@@ -1,7 +1,14 @@
 Haxe TDD Boilerplate
 ====================
 
-## Directory ##
+## Requirements ##
+
+- Haxe 3.0
+- `npm install`
+- `haxelib install munit`
+- `haxelib install mockatoo`
+
+## Directories and Files ##
 
 - build: a build target directory
 - report: a test report directory
