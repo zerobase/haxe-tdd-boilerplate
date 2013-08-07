@@ -9,7 +9,7 @@ import org.hamcrest.*;
 using mockatoo.Mockatoo;
 using org.hamcrest.MatcherAssert;
 
-class FooTest
+class BarTest
 {
 	
 	
@@ -39,11 +39,10 @@ class FooTest
 	}
 	
 	@Test
-	public function testFoo():Void
+	public function testBar():Void 
 	{
-		var bar = Bar.mock();
-		var foo = new Foo(bar);
-		foo.bar_set_str("bar");
-		bar.set_str("bar").verify();
+		var bar = new ConcreteBar();
+		bar.set_str("bar");
+		bar.get_str().assertThat(IsEqual.equalTo("bar"));
 	}
 }
