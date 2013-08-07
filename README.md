@@ -14,14 +14,14 @@ Haxe TDD Boilerplate
 
 ## Directories and Files ##
 
-- build: a build target directory
-- report: a test report directory
-- src: a Haxe source(.hx) directory
-- test: a test suite directory
-- .munit: an munit config file
-- compile.hxml: a Haxe build config file
-- README.md: this document
-- test.hxml: a test config file
+- `build`: a build target directory
+- `report`: a test report directory
+- `src`: a Haxe source(.hx) directory
+- `test`: a test suite directory
+- `.munit`: an munit config file
+- `compile.hxml`: a Haxe build config file
+- `README.md`: this document
+- `test.hxml`: a test config file
 
 ## Test ##
 
