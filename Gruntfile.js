@@ -5,19 +5,19 @@ module.exports = function(grunt){
 
     grunt.initConfig({
         haxe:{
-            compile:{
-				hxml:'compile.hxml'
+            build:{
+                hxml:'build.hxml'
             }
         },
         exec:{
             test:{
-                cmd:'haxelib run munit test -neko'
+                cmd:'haxelib run munit test -neko -result-exit-code'
             }
         },
         watch:{
             //src:{
             //    files:['src/*.hx'],
-            //    tasks:['haxe:compile']
+            //    tasks:['haxe:build']
             //},
             test:{
                 files:['src/*.hx','test/*.hx'],
