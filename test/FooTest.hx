@@ -39,7 +39,7 @@ class FooTest
 	}
 	
 	@Test
-	public function testFoo():Void
+	public function testFooWithMockedBar():Void
 	{
 		var bar = Bar.mock();
 		var foo = new Foo(bar);
@@ -49,4 +49,15 @@ class FooTest
 		Assert.areEqual(foo.bar_get_str(), "bar");
 		bar.set_str("bar").verify();
 	}
+
+	@Test
+	public function testFooWithConcreteBar():Void
+	{
+		var bar = new ConcreteBar();
+		var foo = new Foo(bar);
+		
+		foo.bar_set_str("zzz");
+		Assert.areEqual(foo.bar_get_str(), "zzz");
+		Assert.areEqual(foo.bar_get_str(), bar.get_str());		
+	}	
 }
