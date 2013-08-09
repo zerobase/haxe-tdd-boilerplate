@@ -3,3 +3,4 @@
 -lib munit
 -lib hamcrest
 -lib mockatoo
+-js build/main.js

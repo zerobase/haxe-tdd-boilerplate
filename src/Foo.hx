@@ -1,5 +1,6 @@
 package ;
 
+@:expose()
 class Foo {
 	private var bar:Bar;
 
