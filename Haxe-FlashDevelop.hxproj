@@ -19,7 +19,7 @@
   </classpaths>
   <!-- Build options -->
   <build>
-    <option directives="-debug" />
+    <option directives="" />
     <option flashStrict="False" />
     <option mainClass="Main" />
     <option enabledebug="True" />
