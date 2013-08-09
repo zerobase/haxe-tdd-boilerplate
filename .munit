@@ -2,5 +2,5 @@ version=2.0.2
 src=test
 bin=build
 report=report
-hxml=test.hxml
+hxml=munit.hxml
 classPaths=src

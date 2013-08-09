@@ -20,10 +20,10 @@
   </classpaths>
   <!-- Build options -->
   <build>
-    <option directives="" />
+    <option directives="-debug" />
     <option flashStrict="False" />
     <option mainClass="Main" />
-    <option enabledebug="False" />
+    <option enabledebug="True" />
     <option additional="" />
   </build>
   <!-- haxelib libraries -->
@@ -41,14 +41,14 @@
     <!-- example: <hidden path="..." /> -->
   </hiddenPaths>
   <!-- Executed before build -->
-  <preBuildCommand>haxe compile.hxml</preBuildCommand>
+  <preBuildCommand>haxe test.hxml</preBuildCommand>
   <!-- Executed after build -->
   <postBuildCommand alwaysRun="False" />
   <!-- Other project options -->
   <options>
     <option showHiddenPaths="False" />
     <option testMovie="Custom" />
-    <option testMovieCommand="haxelib run munit test -neko" />
+    <option testMovieCommand="cmd /k haxelib run munit test -result-exit-code -neko" />
   </options>
   <!-- Plugin storage -->
   <storage />
