@@ -43,6 +43,6 @@ class BarTest
 	{
 		var bar = new ConcreteBar();
 		bar.set_str("bar");
-		bar.get_str().assertThat(IsEqual.equalTo("bar"));
+		Assert.areEqual(bar.get_str(), "bar");
 	}
 }

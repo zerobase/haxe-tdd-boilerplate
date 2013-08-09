@@ -43,7 +43,10 @@ class FooTest
 	{
 		var bar = Bar.mock();
 		var foo = new Foo(bar);
+		bar.get_str().returns("bar");
+		
 		foo.bar_set_str("bar");
+		Assert.areEqual(foo.bar_get_str(), "bar");
 		bar.set_str("bar").verify();
 	}
 }
