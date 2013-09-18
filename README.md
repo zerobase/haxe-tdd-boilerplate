@@ -6,6 +6,7 @@ Haxe TDD Boilerplate
 - [Haxe](http://haxe.org/) 3.0
 - Run `haxelib install munit` to install [munit](http://lib.haxe.org/p/munit).
 - Run `haxelib install mockatoo` to install [mockatoo](http://lib.haxe.org/p/mockatoo).
+- Run `npm install` to setup grunt.
 
 ### Optional ###
 
@@ -34,10 +35,10 @@ Haxe TDD Boilerplate
 
 ## Test ##
 
-Run `haxelib run munit test -neko` to test the app.
+Run `grunt test` to test the app.
 
 Run `grunt watch` to test continuously on every source code changes.
 
 ## Build ##
 
-Run `haxe build.hxml` to build the app. If build failed, create `build` directory then retry.
+Run `grunt build` to build the app. If build failed, create `build` directory then retry.

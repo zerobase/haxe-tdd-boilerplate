@@ -4,25 +4,25 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-exec');
 
     grunt.initConfig({
-        haxe:{
-            build:{
-                hxml:'build.hxml'
-            }
-        },
-        exec:{
+        exec:{ // run tests
             test:{
                 cmd:'haxelib run munit test -neko -result-exit-code'
             }
         },
-        watch:{
-            //src:{
-            //    files:['src/*.hx'],
-            //    tasks:['haxe:build']
-            //},
+        watch:{ // watch and test
             test:{
-                files:['src/*.hx','test/*.hx'],
+                files:['src/**/*.hx','test/**/*.hx'],
                 tasks:['exec:test']
+            }
+        },
+        haxe:{ // build
+            build:{
+                hxml:'build.hxml'
             }
         }
     });
+    
+    grunt.registerTask('test', ['exec']);
+    grunt.registerTask('build', ['haxe:build']);
+    grunt.registerTask('default', ['watch']);
 };
